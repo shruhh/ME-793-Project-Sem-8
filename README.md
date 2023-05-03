@@ -1,18 +1,23 @@
-## Data Description
+#### ME 793 Project 
 
-The zip file `dataset.zip` in `data` folder contains 5321 2D microstructure slices and the corresponding z-normal stress distribution. 
+## Predicting FRP Mechanical Properties through CNN-based Microstructure Analysis
 
-Each slice is stored in a `numpy` array with the filename being the corresponding coordinates values.
+Submitted by : Team ID 31  
+Shruti Singh (19D100022), Arjun Deshmukh(19D170002), Prakriti Mehta (19D100013)
 
-## Load data
+#### About
 
-Use `numpy.load`
+We have followed the paper '[Predicting Mechanical Properties from Microstructure Images in Fiber-reinforced Polymers using Convolutional Neural Networks](https://arxiv.org/pdf/2010.03675v1.pdf)’ by Yixuan Suna, Imad Hanhanb, Michael D. Sangidb, and Guang Linc. 
 
-Example:
+This repo contains:
 
-```python
-import numpy as np
-expl_point = np.load(unzipped_folder_path + '2_1_30', 'r', True)
-print(expl_point.shape)
->>> (2, 32, 32)
-```
+1.  src
+    1.  slice\_sample = unzipped data, contains numpy object files
+    2.  [ME793 final.ipynb](https://github.com/shruhh/ME-793-Project-Sem-8/blob/main/src/ME793%20final.ipynb) - this has the code written from scratch by us
+    3.  [edited code stressNet\_2D\_v2.py](https://github.com/shruhh/ME-793-Project-Sem-8/blob/main/src/edited%20code%20stressNet_2D_v2.py) - this is the existing code we updated, to make it run. 
+2.  actual paper
+3.  dataset.zip - this can be downloaded if the interested need the dataset for some other problem. 
+4.  zip of the entire repo - the interested can directly download this zip folder. Unzip it. And, run the files within.
+5.  Presentation PDF
+
+Presentation = [link](https://docs.google.com/presentation/d/1_I0aMXbtm3xVjMVcEo5tCgBH-z2mKTEsFJDSxehOIhE/edit?usp=sharing)
